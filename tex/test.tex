@@ -1,0 +1,25 @@
+% This is the tex file I used to capture the output.
+
+\documentclass{article}
+\usepackage[LSBC3,T1]{fontenc}
+\usepackage{chessboard}
+\usepackage{color}
+
+\definecolor{light}{HTML}{FFCE9E}
+\definecolor{dark}{HTML}{D18B47}
+
+\begin{document}
+\setchessboard{
+	boardfontencoding=LSBC3,
+	clearfontcolors,
+	blackfieldmaskcolor=dark,
+	blackfieldcolor=light,
+	whitefieldmaskcolor=light,
+	setfontcolors,
+	showmover=false
+}
+\chessboard[
+	setfen=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w - - 0 20,
+	addfontcolors
+]
+\end{document}
